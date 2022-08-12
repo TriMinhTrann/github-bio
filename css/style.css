@@ -1,0 +1,87 @@
+.bx-wrapper img {
+    width: 100%;
+}
+
+body{
+    background-color: #333;
+}
+
+.main-title h1{
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Anton', sans-serif;
+}
+
+.main-title{
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+
+svg{
+    display:block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.slider-container{
+    position: relative;
+}
+
+.svg-stroke{
+    width:auto;
+    margin:auto;
+}
+
+
+.svg-stroke path{
+    fill:transparent;
+    stroke:aliceblue;
+}
+
+.draw path{
+    fill:#fff;
+    stroke:transparent;
+    transition: all 5s;
+}
+
+.sub-title{
+    width: 300px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px 15px 20px 15px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    line-height: 1.5em;
+    font-size: small;
+}
+
+.main-gallery{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    margin:20px;
+}
+
+.main-gallery img{
+    width: 100%;
+}
+
+.main-gallery img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/**Responsive Iphone ver**/
+@media only screen and (max-width: 390px){
+    .main-gallery {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+
